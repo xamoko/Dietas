@@ -1,0 +1,161 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Sistema de Dietas</title>
+<link rel= "stylesheet" type="text/css" href="css/estilo.css"/>
+  <link rel="stylesheet" type="text/css" href="css/default.css"/>
+</head>
+<body>
+<div id="container">
+<header>
+ <img src="images/tabasco.jpg" width="339" height="84" alt="logo"/> </a>
+<nav>
+<ul>
+<li><a href="index.html" class="current"> Inicio</a></li>
+<li><a href="desconectar.php"> Salir del Sistema</a></li>
+</ul>
+</nav>
+</header>
+
+ <form method="post" action="altapaciente.php" class="register">
+   
+       <br>
+       <br>
+       <br>
+            <h1>Datos del Paciente</h1>
+     
+               <fieldset class="row1">
+                <legend>Datos</legend>
+                </fieldset>
+                <p>
+                    <label> Folio: </label>
+                    <input name="folio" type="text"/>
+                 
+                     <label> Nombre:</label>
+                    <input name="nombre" type="text"/>
+         
+     
+                     <label> Apellido Paterno: </label>
+                    <input name="apepat" type="text"/>
+                 <p>
+                    <label> Apellido Materno: </label>
+                    <input name="apemat" type="text"/>
+                 
+                     <label> Edad:</label>
+                    <input name="edad" type="text"/>
+                  
+                     <label> Peso :</label>
+                    <input name="peso" type="text"/>
+                <p>
+                     <label> Talla:</label>
+                    <input name="talla" type="text"/>
+                    <p>
+<label>Enfermedad:</label><select name="enfermedad" >
+<option value=""></option>
+  <option value="Hipertension">Hipertensión</option>
+  <option value="Diabetes">Diabetes</option>
+  <option value="Desnutrición">Desnutrición</option>
+  <option value="Obesidad">Obesidad</option>
+  <option value="Normal">Normal</option>
+</select>
+<p>
+<label>Localidad:</label><select name="localidad">
+<option value=""></option>
+  <option value="TCSSA003835">CS SANTUARIO 1ERA SECCION</option>
+  <option value="TCSSA003864">CS VENUSTIANO CARRANZA</option>
+  <option value="TCSSA003893">CS ZOPO NORTE</option>
+  <option value="TCSSA005544">CS TRINIDAD MALPICA</option>
+  <option value="TCSSA003654">CS BONANZA 1ERA SECCION</option>
+  <option value="TCSSA003683">CS CORRALILLO 2DA SECCION</option>
+  <option value="TCSSA003741">CS JOSE MARIA PINO SUAREZ</option>
+  <option value="TCSSA003811">CAPARROSO 2DA SECCION</option>
+  <option value="TCSSA003596">CS ALCALDE MAYOR</option>
+  <option value="TCSSA003770">CS PALOMAS</option>
+  <option value="TCSSA016872">CENTRO DE SALUD FRANCISCO VILLA</option>
+  <option value="TCSSA003712">CS GUILLERMO PRIETO</option>
+  <option value="TCSSA003823">CS RAMON GRANDE</option>
+  <option value="TCSSA005520">CS BAJO TULIJA</option>
+  <option value="TCSSA005532">CS PEDRO C. COLORADO</option>
+  <option value="TCSSA016860">CENTRO DE SALUD PEDRO A. GONZALES</option>
+  <option value="TCSSA003946">CS VIRGINIO CHAN</option>
+  <option value="TCSSA005462">CS LAS FERIAS</option>
+  <option value="TCSSA005474">CS CACAHUATALILLO</option>
+  <option value="TCSSA003753">CS LIMBANO BLANDIN</option>
+  <option value="TCSSA003934">CS EL TRIUNFO 2DA SECCION</option>
+  <option value="TCSSA003601">CS AQUILES SERDAN</option>
+  <option value="TCSSA003671">CS EL CONGO</option>
+  <option value="TCSSA003852">CS TIERRA COLORADA</option>
+  <option value="TCSSA005486">CS SAN ANTONIO</option>
+  <option value="TCSSA005556">CS UNION Y LIBERTAD</option>
+  <option value="TCSSA016843">CENTRO DE SALUD FRANCISCO I MADERO 1ERA</option>
+  <option value="TCSSA016855">CENTRO DE SALUD MONTE ADENTRO</option>
+  <option value="TCSSA003840">CS MONTE LARGO</option>
+  <option value="TCSSA005655">CS 20 DE NOVIEMBRE (LA CUEVA)</option>
+  <option value="TCSSA003700">CS EJIDO MORELOS</option>
+  <option value="TCSSA003910">CS LA UNION</option>
+  <option value="TCSSA003951">CS BUENAVISTA PUXCATAN (NICOLAS BRAVO)</option>
+  <option value="TCSSA005450">CS NUEVA DIVISION DEL BAYO</option>
+  <option value="TCSSA005515">CS BUERGOS</option>
+  <option value="TCSSA005684">CS BITZAL 1ERA SECCION</option>
+  <option value="TCSSA003613">CS BELEN</option>
+  <option value="TCSSA003630">CS BITZAL 4TA SECCION</option>
+  <option value="TCSSA003666">CS BUENAVISTA APASCO</option>
+  <option value="TCSSA003695">CS CHIVALITO 2DA SECCION</option>
+  <option value="TCSSA003881">CS VERNET 3ERA SECCION</option>
+  <option value="TCSSA003905">CS CHILAPILLA 2DA SECCION</option>
+  <option value="TCSSA016831">CS CENTRO DE SALUD EMILIANO ZAPATA 1ERA</option>
+  <option value="TCSSA003642">CS BITZAL 6TA SECCION</option>
+  <option value="TCSSA003724">CS MIGUEL HIDALGO 2DA SECCION</option>
+  <option value="TCSSA003736">CS JOSE COLOMO</option>
+  <option value="TCSSA003765">CS MORELOS</option>
+  <option value="TCSSA003876">CS VERNET 2DA SECCION</option>
+  <option value="TCSSA005445">CS PITAHAYA</option>
+  <option value="TCSSA003526">CARAVANA TIPO O COLONIA ROVIROSA</option>
+  <option value="TCSSA003584">CESSA MACUSPANA</option>
+  <option value="TCSSA016966">CARAVANA TIPO 2 MACUSPANA</option>
+  <option value="TCSSA003625">C.S.U VILLA BENITO JUAREZ</option>
+  <option value="TCSSA005696">CARAVANA TIPO 1 LA ISLA 1ERA SECCION</option>
+  <option value="TCSSA016971">CARAVANA TIPO 2  MOVIL R/A PARAISO</option>
+  <option value="TCSSA003806">C.S.U CIUDAD PEMEX</option>
+  <option value="TCSSA003514">HOSPITAL GENERAL DE MACUSPANA</option>
+  <option value="TCSSA003922">HOSPITAL GENERAL DE VILLA BENITO JUAREZ</option>
+  <option value="TCSSA016622">JURISDICCION SANITARIA DE MACUSPANA</option>
+  
+  
+</select>
+<p>
+                    <br />
+            </fieldset>
+              <fieldset class="row4">
+         
+                <legend>¿Ingresaste los datos correctamente?</legend>
+            </fieldset>
+            
+          <div><button class="button">Guardar datos &raquo;</button></div>
+          <div>
+        </form> 
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<center><button class="button"><a href="consultapaciente1.php">Consultar Paciente &raquo;</a></button><button class="button"><a href="actualizapaciente.html">Actualizar Datos del Paciente &raquo;</a></button> <button class="button"><a href="eliminapaciente.html">Eliminar Paciente &raquo;</a></button><button class="button"><a href="guardaenfermedad.html">Ir a guardar enfermedad &raquo;</a> </button><button class="button"><a href="opciones.php">Regresar al menú principal &raquo;</a></button></center>
+</fieldset>
+<BR />
+</form>
+<div class="holder_content">
+ <footer>
+    <div class="container">
+    <div id="FooterTwo" p align="center"> 
+   <p>Elaborado por <a href="http://twitter.com/nallely192">@NallelyJuarezFeria</a> | © 2013 Todos los derechos reservados.</p>
+ </div>
+</div>
+</footer>
+</form>
+</div>
+</body>
+</html>
+
+</body>
